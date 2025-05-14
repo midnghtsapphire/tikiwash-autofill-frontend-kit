@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -14,22 +15,34 @@ export default {
 			center: true,
 			padding: '2rem',
 			screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
 				'2xl': '1400px'
 			}
 		},
 		extend: {
+      fontFamily: {
+        sans: ['Open Sans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
 			colors: {
+        'bright-blue': '#0FA0CE',
+        'bright-orange': '#F97316',
+        'charcoal-gray': '#403E43',
+        'light-gray': '#F1F1F1',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
+					DEFAULT: 'hsl(var(--primary))', // Will be our bright-blue
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
+					DEFAULT: 'hsl(var(--secondary))', // Can be our bright-orange
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				destructive: {
@@ -41,7 +54,7 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
+					DEFAULT: 'hsl(var(--accent))', // Can be bright-orange
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
