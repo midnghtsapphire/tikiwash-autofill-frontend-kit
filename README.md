@@ -1,5 +1,9 @@
 # Welcome to your Lovable project
 
+
+<!-- AUTO-PACKAGE-BADGES:START -->
+
+<!-- AUTO-PACKAGE-BADGES:END -->
 ## Project info
 
 **URL**: https://lovable.dev/projects/260a6ed9-575a-4499-bc97-0a7b1915a2ca
